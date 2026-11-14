@@ -1,0 +1,10 @@
+WEBVTT - custom title
+
+STYLE
+::cue { color: lime }
+
+REGION
+lines:100%
+
+00:01:00.000 --> 00:01:02.000 align:start position:10%
+Cue with settings

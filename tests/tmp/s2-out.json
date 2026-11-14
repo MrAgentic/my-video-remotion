@@ -1,0 +1,229 @@
+{
+  "vttCues": [
+    {
+      "text": "VTT cue one",
+      "start": "1",
+      "end": "3.5"
+    },
+    {
+      "text": "VTT cue two line AVTT cue two line B",
+      "start": "4",
+      "end": "6.25"
+    },
+    {
+      "text": "VTT cue three italic",
+      "start": "8",
+      "end": "10"
+    }
+  ],
+  "vttPanelError": null,
+  "vttCaptionCountHeader": "Captions (3)",
+  "shotVtt": "/home/mr-agentic/Projects/rd-video/my-video-remotion/tests/tmp/shots/20-vtt-imported.png (49061 bytes)",
+  "messyVttCues": [
+    {
+      "text": "Cue with settings",
+      "start": "60",
+      "end": "62"
+    }
+  ],
+  "messyVttError": null,
+  "exportBtnDisabled": false,
+  "downloadFiles": [
+    "captions.srt"
+  ],
+  "srtContent": {
+    "captions.srt": "1\n00:00:01,000 --> 00:00:03,500\nVTT cue one\n\n2\n00:00:04,000 --> 00:00:06,250\nVTT cue two line A\nVTT cue two line B\n\n3\n00:00:08,000 --> 00:00:10,000\nVTT cue three italic"
+  },
+  "mediaBeforeUpload": [
+    "0fc1be8f75064787a5ddfd9686534fc2.mp4",
+    "3a67cbcc562c4bd09d77edd4e0297a80.mp4",
+    "cesdk-2026-11-14T13_01_05.887Z.mp4",
+    "qa-upload.mp4",
+    "sample-audio.m4a",
+    "test.mp4"
+  ],
+  "mediaAfterUpload": [
+    "0fc1be8f75064787a5ddfd9686534fc2.mp4",
+    "3a67cbcc562c4bd09d77edd4e0297a80.mp4",
+    "cesdk-2026-11-14T13_01_05.887Z.mp4",
+    "qa-upload.mp4",
+    "sample-audio.m4a",
+    "test.mp4"
+  ],
+  "uploadPanelError": null,
+  "uploadOnServer": true,
+  "shotUpload": "/home/mr-agentic/Projects/rd-video/my-video-remotion/tests/tmp/shots/21-after-upload.png (57324 bytes)",
+  "addedUploaded": "videoqa-upload.mp42.0s · 640x360",
+  "afterAddUploadedHeader": "1280x720 · 30fps · 300 frames",
+  "layout": {
+    "leftPanel": {
+      "x": 0,
+      "y": 45.8,
+      "w": 400,
+      "h": 854.2,
+      "right": 400,
+      "bottom": 900
+    },
+    "tabBody": {
+      "x": 0,
+      "y": 91.7,
+      "w": 399,
+      "h": 808.3,
+      "right": 399,
+      "bottom": 900
+    },
+    "rows": [
+      {
+        "label": "Trim in (s)",
+        "rowRight": 281,
+        "inputRight": 180,
+        "inputW": 70,
+        "scrollW": 259,
+        "clientW": 259
+      },
+      {
+        "label": "Trim out (s)",
+        "rowRight": 451,
+        "inputRight": 451,
+        "inputW": 70,
+        "scrollW": 158,
+        "clientW": 158
+      },
+      {
+        "label": "Volume",
+        "rowRight": 281,
+        "inputRight": 241,
+        "inputW": 129,
+        "scrollW": 259,
+        "clientW": 259
+      },
+      {
+        "label": null,
+        "rowRight": 451,
+        "inputRight": 310,
+        "inputW": 13,
+        "scrollW": 158,
+        "clientW": 158
+      }
+    ],
+    "docScroll": {
+      "bodyScrollW": 1440,
+      "bodyClientW": 1440,
+      "tabBodyScrollW": 451,
+      "tabBodyClientW": 399
+    }
+  },
+  "projectBeforeExport": {
+    "version": 1,
+    "fps": 30,
+    "width": 1280,
+    "height": 720,
+    "videoClips": [
+      {
+        "id": "id-mwgio4yl-8",
+        "filename": "qa-upload.mp4",
+        "trimStartSec": 0,
+        "trimEndSec": 2,
+        "volume": 1,
+        "muted": false
+      }
+    ],
+    "audioClips": [],
+    "textOverlays": [],
+    "captions": [
+      {
+        "id": "id-mwginz3m-5",
+        "text": "VTT cue one",
+        "startSec": 1,
+        "endSec": 3.5
+      },
+      {
+        "id": "id-mwginz3m-6",
+        "text": "VTT cue two line A\nVTT cue two line B",
+        "startSec": 4,
+        "endSec": 6.25
+      },
+      {
+        "id": "id-mwginz3m-7",
+        "text": "VTT cue three italic",
+        "startSec": 8,
+        "endSec": 10
+      }
+    ],
+    "captionStyle": {
+      "fontSizePx": 42,
+      "color": "#ffffff",
+      "backgroundColor": "rgba(0,0,0,0.65)",
+      "bottomMarginPx": 60
+    }
+  },
+  "jsonDownloads": [
+    "project-2026-11-14T14-44-24.json"
+  ],
+  "afterWipeHeader": "1280x720 · 30fps · 30 frames",
+  "afterWipeCues": 0,
+  "importMsg": "Project imported.",
+  "projectAfterImport": {
+    "version": 1,
+    "fps": 30,
+    "width": 1280,
+    "height": 720,
+    "videoClips": [
+      {
+        "id": "id-mwgio4yl-8",
+        "filename": "qa-upload.mp4",
+        "trimStartSec": 0,
+        "trimEndSec": 2,
+        "volume": 1,
+        "muted": false
+      }
+    ],
+    "audioClips": [],
+    "textOverlays": [],
+    "captions": [
+      {
+        "id": "id-mwginz3m-5",
+        "text": "VTT cue one",
+        "startSec": 1,
+        "endSec": 3.5
+      },
+      {
+        "id": "id-mwginz3m-6",
+        "text": "VTT cue two line A\nVTT cue two line B",
+        "startSec": 4,
+        "endSec": 6.25
+      },
+      {
+        "id": "id-mwginz3m-7",
+        "text": "VTT cue three italic",
+        "startSec": 8,
+        "endSec": 10
+      }
+    ],
+    "captionStyle": {
+      "fontSizePx": 42,
+      "color": "#ffffff",
+      "backgroundColor": "rgba(0,0,0,0.65)",
+      "bottomMarginPx": 60
+    }
+  },
+  "roundTripEqual": {
+    "sameIgnoringIds": true,
+    "before": "{\"version\":1,\"fps\":30,\"width\":1280,\"height\":720,\"videoClips\":[{\"filename\":\"qa-upload.mp4\",\"trimStartSec\":0,\"trimEndSec\":2,\"volume\":1,\"muted\":false}],\"audioClips\":[],\"textOverlays\":[],\"captions\":[{\"text\":\"VTT cue one\",\"startSec\":1,\"endSec\":3.5},{\"text\":\"VTT cue two line A\\nVTT cue two line B\",\"startSec\":4,\"endSec\":6.25},{\"text\":\"VTT cue three italic\",\"startSec\":8,\"endSec\":10}],\"captionStyle\":{\"fontSizePx\":42,\"color\":\"#ffffff\",\"backgroundColor\":\"rgba(0,0,0,0.65)\",\"bottomMarginPx\":60}}",
+    "after": "{\"version\":1,\"fps\":30,\"width\":1280,\"height\":720,\"videoClips\":[{\"filename\":\"qa-upload.mp4\",\"trimStartSec\":0,\"trimEndSec\":2,\"volume\":1,\"muted\":false}],\"audioClips\":[],\"textOverlays\":[],\"captions\":[{\"text\":\"VTT cue one\",\"startSec\":1,\"endSec\":3.5},{\"text\":\"VTT cue two line A\\nVTT cue two line B\",\"startSec\":4,\"endSec\":6.25},{\"text\":\"VTT cue three italic\",\"startSec\":8,\"endSec\":10}],\"captionStyle\":{\"fontSizePx\":42,\"color\":\"#ffffff\",\"backgroundColor\":\"rgba(0,0,0,0.65)\",\"bottomMarginPx\":60}}"
+  },
+  "cuesBeforeReload": 3,
+  "afterReloadHeader": "1280x720 · 30fps · 300 frames",
+  "afterReloadActiveTab": "Media",
+  "afterReloadStoredRaw": "{\"version\":1,\"fps\":30,\"width\":1280,\"height\":720,\"videoClips\":[{\"id\":\"id-mwgio4yl-8\",\"filename\":\"qa-upload.mp4\",\"trimStartSec\":0,\"trimEndSec\":2,\"volume\":1,\"muted\":false}],\"audioClips\":[],\"textOverlays\":[],\"captions\":[{\"id\":\"id-mwginz3m-5\",\"text\":\"VTT cue one\",\"startSec\":1,\"endSec\":3.5},{\"id\":\"id-mwginz3m-6\",\"text\":\"VTT cue two line A\\nVTT cue two line B\",\"startSec\":4,\"endSec\":6.25},{\"id\":\"id-mwginz3m-7\",\"text\":\"VTT cue three italic\",\"startSec\":8,\"endSec\":10}],\"captionStyle\":{\"fontSizePx\":42,\"color\":\"#ffffff\",\"backgroundColor\":\"rgba(0,0,0,0.65)\",\"bottomMarginPx\":60}}",
+  "afterReloadCues": 3,
+  "afterReloadCueTexts": [
+    "VTT cue one",
+    "VTT cue two line AVTT cue two line B",
+    "VTT cue three italic"
+  ],
+  "afterReloadVideoSegs": 1
+}
+
+EVENTS (errors only):
+[harness] done in 31927ms

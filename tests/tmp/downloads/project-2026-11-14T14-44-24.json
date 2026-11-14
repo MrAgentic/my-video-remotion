@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "fps": 30,
+  "width": 1280,
+  "height": 720,
+  "videoClips": [
+    {
+      "id": "id-mwgio4yl-8",
+      "filename": "qa-upload.mp4",
+      "trimStartSec": 0,
+      "trimEndSec": 2,
+      "volume": 1,
+      "muted": false
+    }
+  ],
+  "audioClips": [],
+  "textOverlays": [],
+  "captions": [
+    {
+      "id": "id-mwginz3m-5",
+      "text": "VTT cue one",
+      "startSec": 1,
+      "endSec": 3.5
+    },
+    {
+      "id": "id-mwginz3m-6",
+      "text": "VTT cue two line A\nVTT cue two line B",
+      "startSec": 4,
+      "endSec": 6.25
+    },
+    {
+      "id": "id-mwginz3m-7",
+      "text": "VTT cue three italic",
+      "startSec": 8,
+      "endSec": 10
+    }
+  ],
+  "captionStyle": {
+    "fontSizePx": 42,
+    "color": "#ffffff",
+    "backgroundColor": "rgba(0,0,0,0.65)",
+    "bottomMarginPx": 60
+  }
+}

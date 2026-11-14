@@ -31,6 +31,38 @@ npm run dev
 npx remotion render
 ```
 
+## Browser video editor
+
+```console
+npm run editor
+```
+
+Opens a single server on `http://localhost:5173` (Vite in middleware mode plus a
+small `/api/*` layer in `server/index.mjs`). Edit video clips, background audio,
+text overlays and `.srt`/`.vtt` captions, preview them through
+`@remotion/player`, and export an MP4.
+
+Preview and export use the **same** composition (`src/render/EditorComposition.tsx`,
+registered as `Editor`), so what you see is what renders. The project is a plain
+JSON object (`src/editor/types.ts`) — autosaved to `localStorage` and
+importable/exportable as a `.json` file.
+
+- `GET /api/media` – lists video/audio in `public/` (durations probed with ffprobe)
+- `POST /api/upload?name=<file>` – raw binary body, saved into `public/`
+- `POST /api/render` – project JSON in the body, returns `{ jobId }`
+- `GET /api/render/:id` – `{ status, progress, outputName, error, downloadUrl }`
+- `GET /api/out/:name` – download the finished file
+
+Manual render without the UI:
+
+```console
+npx remotion render src/index.ts Editor out/clip.mp4 --props=/absolute/path/to/project.json
+```
+
+`public/sample.srt` and `public/sample-audio.m4a` are test fixtures.
+`?project=<urlencoded JSON>` seeds the editor on load, which is handy for
+automated checks.
+
 **Upgrade Remotion**
 
 ```console

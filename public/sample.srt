@@ -1,0 +1,19 @@
+1
+00:00:01,000 --> 00:00:04,000
+Welcome to the browser video editor
+
+2
+00:00:04,500 --> 00:00:08,000
+Import this .srt file on the Captions tab
+
+3
+00:00:08,500 --> 00:00:12,000
+Captions are burned into the exported MP4
+
+4
+00:00:12,500 --> 00:00:16,000
+Trim video and audio, add text, then export
+
+5
+00:00:16,500 --> 00:00:19,500
+Everything you see in the preview is what renders

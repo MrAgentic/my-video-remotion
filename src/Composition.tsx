@@ -3,7 +3,6 @@ import {
   CalculateMetadataFunction,
   Composition,
   staticFile,
-  Track,
 } from "remotion";
 
 type Props = {};

@@ -1,0 +1,15 @@
+WEBVTT
+
+00:00:01.000 --> 00:00:03.500
+VTT cue one
+
+2
+00:00:04.000 --> 00:00:06.250
+VTT cue two line A
+VTT cue two line B
+
+NOTE a comment block that must be skipped
+still part of the note
+
+00:00:08.000 --> 00:00:10.000
+<i>VTT cue three italic</i>

@@ -1,0 +1,419 @@
+:root {
+  --tl-label: 76px;
+  color-scheme: dark;
+  --bg: #0f1115;
+  --bg2: #161922;
+  --bg3: #1e222c;
+  --line: #2a2f3a;
+  --fg: #e6e8ee;
+  --muted: #8b93a5;
+  --accent: #4c8dff;
+  --ok: #37c97a;
+  --err: #ff5d5d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 13px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: var(--bg3);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 4px 9px;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  border-color: var(--accent);
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+  background: #0b0d11;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 3px 6px;
+}
+
+input[type="checkbox"],
+input[type="range"],
+input[type="color"] {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+input[type="color"] {
+  width: 26px;
+  height: 22px;
+}
+
+input.grow,
+textarea {
+  flex: 1;
+  min-width: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--line);
+  background: var(--bg2);
+}
+
+.topbar .btns {
+  margin-left: auto;
+}
+
+.btns {
+  display: flex;
+  gap: 6px;
+}
+
+.main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: minmax(320px, 400px) 1fr;
+  min-height: 0;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--line);
+  background: var(--bg2);
+  min-height: 0;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 8px;
+  border-bottom: 1px solid var(--line);
+}
+
+.tab.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.tab-body {
+  overflow: auto;
+  flex: 1;
+  min-height: 0;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+}
+
+.preview {
+  flex: 1;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  padding: 12px;
+}
+
+.panel {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.panel-head h2 {
+  margin: 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
+.muted {
+  color: var(--muted);
+  margin: 4px 0;
+}
+
+.error {
+  color: var(--err);
+  margin: 6px 0;
+  white-space: pre-wrap;
+}
+
+.ok {
+  color: var(--ok);
+  margin: 6px 0;
+}
+
+.scroll {
+  max-height: 160px;
+  overflow: auto;
+  background: #0b0d11;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 11px;
+}
+
+.media-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.media-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  text-align: left;
+}
+
+.fname {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.badge {
+  font-size: 10px;
+  text-transform: uppercase;
+  padding: 1px 5px;
+  border-radius: 3px;
+  background: #2c3546;
+}
+
+.badge.audio {
+  background: #2d4a3a;
+}
+
+.clip {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 7px 9px;
+  margin-bottom: 8px;
+  background: #12151c;
+  cursor: pointer;
+}
+
+.clip.selected {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent) inset;
+}
+
+.clip-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.clip-title .muted {
+  margin: 0;
+  font-size: 11px;
+}
+
+.clip-title .btns {
+  margin-left: auto;
+}
+
+.fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 12px;
+  margin-top: 8px;
+  cursor: default;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.row-label {
+  color: var(--muted);
+  min-width: 82px;
+  font-size: 11px;
+}
+
+.row input[type="number"],
+.row input[type="text"] {
+  width: 70px;
+}
+
+.num {
+  color: var(--muted);
+  font-size: 11px;
+  min-width: 32px;
+}
+
+.cue-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 8px;
+  max-height: 320px;
+  overflow: auto;
+}
+
+.cue {
+  display: grid;
+  grid-template-columns: 22px 1fr 62px 62px 26px;
+  gap: 4px;
+  align-items: center;
+}
+
+.cue input[type="number"] {
+  width: 62px;
+}
+
+.cue-index {
+  color: var(--muted);
+  font-size: 11px;
+  text-align: right;
+}
+
+.timeline {
+  position: relative;
+  border-top: 1px solid var(--line);
+  background: var(--bg2);
+  padding: 8px 12px 12px;
+}
+
+.tl-head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  margin-bottom: 6px;
+}
+
+.tl-row {
+  display: grid;
+  grid-template-columns: var(--tl-label) 1fr;
+  align-items: center;
+  gap: 8px;
+  height: 22px;
+}
+
+.tl-label {
+  color: var(--muted);
+  font-size: 11px;
+  text-align: right;
+}
+
+.tl-track {
+  position: relative;
+  height: 18px;
+  background: #0b0d11;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.seg {
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  border: none;
+  border-radius: 2px;
+  overflow: hidden;
+  font-size: 10px;
+  padding: 0 3px;
+  text-align: left;
+}
+
+.seg.video {
+  background: #2f5c9e;
+  color: #dce9ff;
+}
+
+.seg.video.selected {
+  background: var(--accent);
+  color: #fff;
+}
+
+.seg.audio {
+  background: #2f7a52;
+}
+
+.seg.text {
+  background: #8a6d1f;
+}
+
+.seg.caption {
+  background: #6b3f7a;
+}
+
+.playhead {
+  position: absolute;
+  top: 30px;
+  bottom: 12px;
+  width: 2px;
+  background: #fff;
+  pointer-events: none;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.progress .bar {
+  height: 8px;
+  background: var(--accent);
+  border-radius: 4px;
+  min-width: 2px;
+  flex: 0 0 auto;
+  max-width: 100%;
+}
